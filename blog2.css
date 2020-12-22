@@ -10,7 +10,9 @@ body {
     color: black;
     overflow-x: hidden;
     margin: 50px;
-  }
+    width:50%; 
+    min-height: 1000vh;
+} 
 
 .footer { 
 position: fixed;
@@ -24,7 +26,7 @@ position: fixed;
 
 
 
-  nav {
+nav {
     left: 50;
     z-index: 100; 
     
@@ -38,7 +40,7 @@ nav ul {
 nav ul li {
     text-transform: uppercase;
     color: purple;
-    margin: 10px 850px;
+    margin: 10px 800px;
     
 }
 
