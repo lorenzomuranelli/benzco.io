@@ -4,7 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="style3.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="style3.css" />
+    
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="BenzCo">
+    <meta name="application-name" content="BenzCo">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
 
     <title>benzco.io</title>
 </head>
@@ -19,13 +31,134 @@
    
         <div class="content" ">
             <h1 style="color:#006600 ">Who is Enzo?</h1>
-            <p>Hi, I am Enzo. I was born and raised in New York. More specifically I was raised in a middle class home in Westchester County, the "city suburbs." I am of Cuban, British, and Italian descent and am one of five children. I am fluent in two languages: English and Spanish.</p>
+            <p>Hi, I am Enzo. I was born and raised in New York. More specifically, I was raised in a middle class home in Westchester County, the "city suburbs." I am of Cuban, British, and Italian descent and am one of five children. I am fluent in two languages: English and Spanish.</p>
             <p>After graduating from Ossining High School in 2017, I knew that I wanted a geographical change. Thus, I took my talents to South Beach...rather, North Carolina and started attending school at the University of North Carolina at Chapel Hill. I am currently pursuing a Bachelor of Science in Information Science (Data Analytics concentration) and a second major in Public Policy (Innovation/Tech policy concentration), as well as a minor in Philosophy, Politics, and Economics. I will graduate in May 2021. I hope to pursue a career in the FinTech realm, but am open to opportunities in consulting, software engineering, and data science.</p> 
             <p>I consider myself adaptable, a quick learner, and a diligent worker. I am a natural leader and problem solver, and have greatly improved my programming skills over the past few years. My drive for success is a testament to my diverse ethnic and work background.</p> 
             <p>Outside of school and work, I am an avid investor in stocks and cryptocurrencies, enjoy listening to podcasts and music, and hanging out with friends and family. I stay active by playing tennis, golf, and swimming. I recently started writing a blog about topics that I am interested in. Check it out by clicking on the Blog icon to the right. </p>
-            <p>Here is a link to my resume, which shows my experiences and skills in more detail: <a href="Lorenzo_Muranelli_Resume.pdf">Resume</a></p>
-            <p>To view my past and current projects, please visit my <a href="https://github.com/lorenzomuranelli"<i class="fab fa-github"></i>  GitHub: lorenzomuranelli</a></p>  
+            <p>Here is my resume, which shows my experiences and skills in more detail: <a href="Lorenzo_Muranelli_Resume.pdf"<i class="fa fa-file-pdf" style="color:purple;"></i> Resume</a></p>
+            <p>To view my past and current projects, please visit my <a href="https://github.com/lorenzomuranelli"<i class="fab fa-github" style="color: purple"></i> GitHub: lorenzomuranelli</a></p>  
+            <p> Click on the image below to access the image lightbox. </p>
         </div>    
+
+        <div class="footer">
+            <p>Copyright&copy; 2020 benzco.io | Powered by BlueHost</p>
+          </div>
+
+       <!-- Images used to open the lightbox -->
+<div class="row">
+    <div class="column">
+      <img src="IMG_3760.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    </div>
+    
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+        <div class="mySlides">
+            <div class="numbertext">1 / 6 Park City, Utah: Skiing </div>
+            <img src="IMG_3760.jpg" style="width:100%">
+          </div>
+      
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 6 California: Torrey Pines City Park (I am on the far right)</div>
+        <img src="IMG_0148.JPG" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 6 Bahamas: Sunset</div>
+        <img src="IMG_1389.JPG" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 6 North Carolina: Forest</div>
+        <img src="IMG_1520.JPG" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">5 / 6 Jordan Lake: Candid</div>
+        <img src="IMG_1526.JPG" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 6 Park City, Utah: Mountains</div>
+        <img src="2B772D76-952C-40E3-AAC5-DD2E22A765A9.JPG" style="width:100%">
+      </div>
+
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <!-- Thumbnail image controls
+      <div class="column">
+        <img class="demo" src="profile pic copy.JPG" onclick="currentSlide(1)" alt="Headshot">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="IMG_1389.JPG" onclick="currentSlide(2)" alt="Sunset">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="IMG_1520.JPG" onclick="currentSlide(3)" alt="Forest">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="IMG_1526.JPG" onclick="currentSlide(4)" alt="Candid" style="size: 10px">
+      </div>
+    </div>
+  </div>
+--> 
+<script>
+    // Open the Modal
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    
+    // Close the Modal
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+    
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
     
     <style>
         .footer {
@@ -39,9 +172,7 @@
         }
         </style>
         
-        <div class="footer">
-          <p>Copyright&copy; 2020 benzco.io</p>
-        </div>
+        
 </body>
 
 </html>
