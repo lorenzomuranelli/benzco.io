@@ -5,69 +5,67 @@
 }
 
 body {
-    font-family: 'Lato', sans-serif;
-    background-color: white;
-    color: black;
-    overflow-x: hidden;
-    margin: 50px;
-    width:50%; 
-    min-height: 1000vh;
-} 
+  font-family: "Lato", sans-serif;
+  background-color: white;
+  color: black;
+  overflow-x: hidden;
+  margin: 50px;
+  width:60%; 
+  min-height: 1000vh;
+}
 
 .footer { 
-position: fixed;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:white;
+    color: black;
+    text-align: left;
+    transition: margin-left .5s;
+    font-size: 10px; 
+  }
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
   left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color:white;
-  color: black;
-  text-align: left;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  margin: 0px auto;
+  
+  
 }
 
 
 
-nav {
-    left: 50;
-    z-index: 100; 
-    
-  }
-
-nav ul {
-    list-style-type: none;
-    
-}
-
-nav ul li {
-    text-transform: uppercase;
-    color: purple;
-    margin: 10px 800px;
-    
-}
-
-nav ul li i {  
-    margin-right: 10px;
-
-}
-
-nav ul li + li {
-    margin-left: 10px 630px;
-  }
-
-  nav ul li + li + li {
-    margin-left: 10px 675px;
-    
-  }
-
-  .content {
-    max-width: 1000px;
-    margin: -150px auto;
-  }
- 
-  @viewport {
-    width: device-width ;
-    zoom: 1.0 ;
-  }
-
-  @media screen and (max-width:320px) {
-    /* CSS for screens that are 320 pixels or less will be put in this section */
-  }
